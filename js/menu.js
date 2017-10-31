@@ -5,7 +5,7 @@ class Menu extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            menu: ['Home','Link','Disabled']
+            menu: ['Home','Link','Disabled','NewData']
         }
     }
 

@@ -4,6 +4,7 @@ import Menu from './menu';
 import Middle from './middle';
 import Footer from './footer';
 import Link from './link';
+import Newdata from './newdata'
 class Head extends React.Component {
     constructor (props){
         super (props);
@@ -39,6 +40,8 @@ class Head extends React.Component {
         let currentPage = this.state.currentPage;
         if(currentPage.toLowerCase() == 'home')
             return <Middle/>;
+        if(currentPage.toLowerCase() == 'newdata')
+            return <Newdata subreddit="reactjs"/>;
         else
             return <Link/>;
     }
